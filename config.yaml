@@ -1,0 +1,6 @@
+---
+algos:
+#  - BinarySearch
+#  - LinearSearch
+#  - TwoCrystalBalls
+  - BubbleSort
