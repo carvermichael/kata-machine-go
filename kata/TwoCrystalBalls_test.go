@@ -16,6 +16,6 @@ func TestTwoCrystalBalls(t *testing.T) {
 		data[i] = true
 	}
 
-	g.Expect(TwoCrystalBalls(data), idx)
-	g.Expect(TwoCrystalBalls(make([]bool, 10000)), -1)
+	g.Expect(TwoCrystalBalls(data)).To(Equal(idx))
+	g.Expect(TwoCrystalBalls(make([]bool, 10000))).To(Equal(-1))
 }

@@ -19,6 +19,7 @@ type Config struct {
 	TODO:
 		- refactor
 		- add ability to add a day by key word (e.g., "go generate --name LinkedList")
+		- add ability to run tests on latest day with a single, simple command
 */
 
 func main() {
