@@ -1,6 +1,11 @@
 ---
 algos:
+#  - ArrayList
 #  - BinarySearch
+#  - BubbleSort
 #  - LinearSearch
+#  - MazeSolver
+#  - Queue
+#  - SinglyLinkedList
+#  - Stack
 #  - TwoCrystalBalls
-  - BubbleSort
