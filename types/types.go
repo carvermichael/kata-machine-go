@@ -9,3 +9,8 @@ type List[T any] interface {
 	Prepend(item T)
 	Get(index int) (T, error)
 }
+
+type Point struct {
+	X int
+	Y int
+}
