@@ -1,12 +1,11 @@
-package testUtils
+package misc
 
 import (
 	. "github.com/onsi/gomega"
-	"kata-machine-go/types"
 	"testing"
 )
 
-func TestList(t *testing.T, list types.List[int]) {
+func TestList(t *testing.T, list List[int]) {
 	g := NewWithT(t)
 
 	list.Append(5)

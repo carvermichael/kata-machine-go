@@ -3,7 +3,7 @@ package kata
 import (
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gstruct"
-	. "kata-machine-go/types"
+	. "kata-machine-go/misc"
 	"testing"
 )
 

@@ -2,11 +2,15 @@
 algos:
 #  - ArrayList
 #  - BinarySearch
+  - BTBFS
+  - BTInOrder
+  - BTPreOrder
+  - BTPostOrder
 #  - BubbleSort
 #  - LinearSearch
 #  - MazeSolver
 #  - Queue
+#  - QuickSort
 #  - SinglyLinkedList
 #  - Stack
 #  - TwoCrystalBalls
-#  - QuickSort

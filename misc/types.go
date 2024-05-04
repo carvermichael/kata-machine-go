@@ -1,4 +1,4 @@
-package types
+package misc
 
 type List[T any] interface {
 	Length() int
@@ -13,4 +13,10 @@ type List[T any] interface {
 type Point struct {
 	X int
 	Y int
+}
+
+type BinaryTreeNode struct {
+	val   int
+	left  *BinaryTreeNode
+	right *BinaryTreeNode
 }

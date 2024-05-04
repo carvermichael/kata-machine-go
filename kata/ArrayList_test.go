@@ -1,7 +1,7 @@
 package kata
 
 import (
-	. "kata-machine-go/testUtils"
+	. "kata-machine-go/misc"
 	"testing"
 )
 
