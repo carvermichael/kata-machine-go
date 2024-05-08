@@ -8,6 +8,7 @@ algos:
 #  - BTPostOrder
 #  - BubbleSort
 #  - CompareBinaryTrees
+#  - DFSonBST
 #  - LinearSearch
 #  - MazeSolver
 #  - Queue
