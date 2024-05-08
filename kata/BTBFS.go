@@ -1,9 +1,9 @@
 package kata
 
 import (
-	. "kata-machine-go/misc/"
+	. "kata-machine-go/misc"
 )
 
-func BTBFS(root *BinaryTreeNode, needle int) bool {
+func BTBFS(root *BinaryTreeNode[int], needle int) bool {
 
 }

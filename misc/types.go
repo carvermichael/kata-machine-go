@@ -15,8 +15,14 @@ type Point struct {
 	Y int
 }
 
-type BinaryTreeNode struct {
-	val   int
-	left  *BinaryTreeNode
-	right *BinaryTreeNode
+type BinaryTreeNode[T any] struct {
+	Val   T
+	Left  *BinaryTreeNode[T]
+	Right *BinaryTreeNode[T]
+}
+
+type ListNode[T any] struct {
+	Val  T
+	Next *ListNode[T]
+	Prev *ListNode[T]
 }

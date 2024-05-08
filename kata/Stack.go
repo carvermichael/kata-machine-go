@@ -11,10 +11,10 @@ func (s *Stack[T]) Push(item T) {
 
 }
 
-func (s *Stack[T]) Pop() (T, error) {
+func (s *Stack[T]) Pop() (*T, error) {
 
 }
 
-func (s *Stack[T]) Peek() (T, error) {
+func (s *Stack[T]) Peek() (*T, error) {
 
 }

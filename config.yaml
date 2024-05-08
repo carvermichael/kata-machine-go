@@ -2,10 +2,10 @@
 algos:
 #  - ArrayList
 #  - BinarySearch
-  - BTBFS
-  - BTInOrder
-  - BTPreOrder
-  - BTPostOrder
+#  - BTBFS
+#  - BTInOrder
+#  - BTPreOrder
+#  - BTPostOrder
 #  - BubbleSort
 #  - LinearSearch
 #  - MazeSolver

@@ -2,6 +2,6 @@ package kata
 
 import . "kata-machine-go/misc"
 
-func BTPreOrder(root *BinaryTreeNode) []int {
+func BTPreOrder(root *BinaryTreeNode[int]) []int {
 
 }
