@@ -11,6 +11,7 @@ algos:
 #  - DFSonBST
 #  - LinearSearch
 #  - MazeSolver
+#  - MinHeap
 #  - Queue
 #  - QuickSort
 #  - SinglyLinkedList
