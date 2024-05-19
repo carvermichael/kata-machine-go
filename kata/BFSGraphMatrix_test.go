@@ -9,7 +9,7 @@ import (
 func TestBFSGraphMatrix(t *testing.T) {
 	g := NewWithT(t)
 
-	g.Expect(BFS(Matrix2, 0, 6)).To(Equal([]int{
+	g.Expect(BFSGraphMatrix(Matrix2, 0, 6)).To(Equal([]int{
 		0,
 		1,
 		4,
@@ -17,5 +17,5 @@ func TestBFSGraphMatrix(t *testing.T) {
 		6,
 	}))
 
-	g.Expect(BFS(Matrix2, 6, 0)).To(Equal(make([]int, 0)))
+	g.Expect(BFSGraphMatrix(Matrix2, 6, 0)).To(Equal(make([]int, 0)))
 }

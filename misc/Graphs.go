@@ -1,5 +1,43 @@
 package misc
 
+type AdjListEntry struct {
+	To     int
+	Weight int
+}
+
+//	 >(1)<--->(4) ---->(5)
+//	/          |       /|
+//
+// (0)     ------|------- |
+//
+//	\   v      v        v
+//	 >(2) --> (3) <----(6)
+var List2 = [][]AdjListEntry{
+	{
+		{To: 1, Weight: 3},
+		{To: 2, Weight: 1},
+	},
+	{
+		{To: 4, Weight: 1},
+	},
+	{
+		{To: 3, Weight: 7},
+	},
+	{},
+	{
+		{To: 1, Weight: 1},
+		{To: 3, Weight: 5},
+		{To: 5, Weight: 2},
+	},
+	{
+		{To: 2, Weight: 18},
+		{To: 6, Weight: 1},
+	},
+	{
+		{To: 3, Weight: 1},
+	},
+}
+
 //	 >(1)<--->(4) ---->(5)
 //	/          |       /|
 //

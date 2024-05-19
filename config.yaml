@@ -1,6 +1,7 @@
 ---
 algos:
 #  - ArrayList
+#  - BFSGraphList
 #  - BFSGraphMatrix
 #  - BinarySearch
 #  - BTBFS
