@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestDFSOnBST(t *testing.T) {
+func TestDFSonBST(t *testing.T) {
 	g := NewWithT(t)
 
 	g.Expect(DFSOnBST(Tree, 45)).To(Equal(true))
