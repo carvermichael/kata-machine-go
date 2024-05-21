@@ -11,8 +11,9 @@ algos:
 #  - BubbleSort
 #  - CompareBinaryTrees
 #  - DFSonBST
-  - DijkstraList
+#  - DijkstraList
 #  - LinearSearch
+#  - Map
 #  - MazeSolver
 #  - MinHeap
 #  - Queue
