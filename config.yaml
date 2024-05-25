@@ -13,6 +13,7 @@ algos:
 #  - DFSonBST
 #  - DijkstraList
 #  - LinearSearch
+#  - LRU
 #  - Map
 #  - MazeSolver
 #  - MinHeap
