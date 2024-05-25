@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"gopkg.in/yaml.v3"
-	"io/ioutil"
 	"log"
 	"os"
 	"sort"
@@ -15,19 +14,12 @@ type Config struct {
 	Algos []string
 }
 
-/*
-	TODO:
-		- refactor
-		- add ability to add a day by key word (e.g., "go generate --name LinkedList")
-		- add ability to run tests on latest day with a single, simple command
-*/
-
 func main() {
 
 	if len(os.Args) > 1 && os.Args[1] == "generate" {
 		fmt.Println("generate!")
 
-		bytes, err := ioutil.ReadFile("config.yaml")
+		bytes, err := os.ReadFile("config.yaml")
 		if err != nil {
 			log.Fatal("Failed to find config file.")
 			return
@@ -83,7 +75,7 @@ func main() {
 			for _, w := range kataFiles {
 				if !w.IsDir() && strings.Contains(w.Name(), algoName) {
 					pathStr := kataPath + w.Name()
-					fileBytes, err := ioutil.ReadFile(pathStr)
+					fileBytes, err := os.ReadFile(pathStr)
 					if err != nil {
 						log.Fatalf("Failed to read file: %s", pathStr)
 					}
@@ -92,15 +84,14 @@ func main() {
 					fileString = strings.Replace(fileString, "package kata", "package "+dayFolder, 1)
 
 					newPath := dayFolder + "/" + w.Name()
-					err = ioutil.WriteFile(newPath, []byte(fileString), 0750)
+					err = os.WriteFile(newPath, []byte(fileString), 0750)
 					if err != nil {
 						log.Fatalf("Failed to write file: %s", newPath)
 					}
 				}
 			}
 		}
-
 	} else {
-		fmt.Println("de-generate")
+		fmt.Println("degenerate")
 	}
 }
